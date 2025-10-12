@@ -1,0 +1,160 @@
+/* Estilos generales y reseteo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+}
+
+.main-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-wrapper {
+    display: flex;
+    width: 900px;
+    height: 600px;
+    background-color: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Panel izquierdo de bienvenida */
+.panel-izquierdo {
+    flex: 1;
+    background: linear-gradient(45deg, #003366, #005f9e);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.panel-izquierdo .logo {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.panel-izquierdo h2 {
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.panel-izquierdo h1 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/* Panel derecho del formulario */
+.panel-derecho {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.panel-derecho h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.panel-derecho p {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+/* --- Estilo de los campos de entrada --- */
+/* (Puedes usar aquí el estilo que prefieras de los que te mostré antes) */
+.input-group input {
+  width: 100%;
+  padding: 15px 15px 15px 45px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #ccc;
+  border-radius: 0;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-bottom-color: #007bff;
+}
+/* --- Fin del estilo de los campos de entrada --- */
+
+
+.login-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.links a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Diseño responsivo para pantallas pequeñas */
+@media (max-width: 920px) {
+    .login-wrapper {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+    .panel-izquierdo {
+        border-radius: 15px 15px 0 0;
+        padding: 30px;
+    }
+    .panel-derecho {
+        padding: 40px;
+    }
+}
