@@ -1,4 +1,3 @@
-/* Estilos generales y reseteo */
 * {
     margin: 0;
     padding: 0;
@@ -90,8 +89,7 @@ body {
     color: #aaa;
 }
 
-/* --- Estilo de los campos de entrada --- */
-/* (Puedes usar aquí el estilo que prefieras de los que te mostré antes) */
+/* Campos de entrada */
 .input-group input {
   width: 100%;
   padding: 15px 15px 15px 45px;
@@ -108,7 +106,6 @@ body {
   outline: none;
   border-bottom-color: #007bff;
 }
-/* --- Fin del estilo de los campos de entrada --- */
 
 
 .login-button {
@@ -143,7 +140,7 @@ body {
     text-decoration: underline;
 }
 
-/* Diseño responsivo para pantallas pequeñas */
+/* Responsibve */
 @media (max-width: 920px) {
     .login-wrapper {
         flex-direction: column;
