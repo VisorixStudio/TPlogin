@@ -1,3 +1,5 @@
+<!-- html con diseno de pagina de registro -->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,7 +12,7 @@
 <body>
     <div class="main-container">
         <div class="login-wrapper">
-            <div class="panel-izquierdo">
+            <div class="panel-izquierdo"> <!-- Imagen o logo  -->
                 <div class="logo">
                     <i class="fa-solid fa-graduation-cap"></i>
                 </div>
@@ -18,7 +20,7 @@
                 <h1>TP LOGIN</h1>
             </div>
 
-            <div class="panel-derecho" style="margin-top: 25px;">
+            <div class="panel-derecho" style="margin-top: 25px;"> <!-- Ingreso de datos de usuario -->
                 <h2>Crea tu cuenta</h2>
                 <p>Únete a nuestra comunidad de estudiantes</p>
                 <form action="#">
@@ -36,8 +38,10 @@
                     </div>
                     <div class="input-group">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="password" placeholder="Crea una contraseña" required>
-                    </div>
+                        <input type="password" placeholder="Crea una contraseña" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}" 
+                                title="Debe tener al menos 8 caracteres, una mayúscula, una minúscula, un número y un símbolo."> 
+                    </div> <!-- Expresion regular para validar pass, .*[a-z] minúscula .*[A-Z] mayuscula .*\d numero .*[\W_] especial -->
+                    
                     <div class="input-group">
                         <i class="fa-solid fa-lock"></i>
                         <input type="password" placeholder="Confirma tu contraseña" required>
